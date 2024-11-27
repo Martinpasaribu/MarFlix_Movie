@@ -1,3 +1,5 @@
+"use client"
+
 import { MovieModels } from '@/models/modelsMovie'
 import React, { useEffect, useState } from 'react'
 import Image from 'next/image'
