@@ -4,7 +4,7 @@ import { Provider } from 'react-redux';
 // import store from '../store';
 import { ReactNode } from 'react';
 import store from '@/lib/store';
-import LayoutClient from '../LayoutProvider/page';
+import LayoutClient from '../LayoutProvider/layout';
 // import { GeistProvider, CssBaseline } from '@geist-ui/core'
 
 type ClientProviderProps = {
