@@ -7,7 +7,7 @@ import { MovieModels } from "@/models/modelsMovie";
 import Image from "next/image";
 import { useEffect, useState } from "react";
 import useSWR from 'swr';
-import MovieDashboard from "./movie/page";
+import MovieDashboard from "../component/MovieDahsboard";
 import BookmarkModal from "@/constants/modalBookmark";
 import Loading from "@/component/Loading";
 
