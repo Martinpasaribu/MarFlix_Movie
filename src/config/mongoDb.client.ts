@@ -10,7 +10,7 @@ export async function connectToDatabase(): Promise<void> {
         return;
     }
 
-    const url: string = process.env.MongoDB_Local || '';
+    const url: string = process.env.MongoDB_cloud2 || '';
     const dbName = "MarFlix_Movie";
     const fullUrl = `${url}/${dbName}`;
 
