@@ -1,0 +1,156 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Target elemen scrollbar */
+::-webkit-scrollbar {
+  width: 12px; /* Lebar scrollbar vertikal */
+  height: 12px; /* Tinggi scrollbar horizontal */
+}
+
+/* Track scrollbar (background track) */
+::-webkit-scrollbar-track {
+  background: #f1f1f1; /* Warna background */
+  border-radius: 10px; /* Membuat sudut melengkung */
+}
+
+/* Thumb scrollbar (bagian yang dapat digeser) */
+::-webkit-scrollbar-thumb {
+  background: #1e293b ; /* Warna thumb */
+  border-radius: 10px; /* Membuat sudut melengkung */
+  border: 3px solid #f1f1f1; /* Menambahkan padding di sekitar thumb */
+}
+
+/* Hover pada thumb */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; /* Ubah warna thumb saat hover */
+}
+
+.scrl {
+
+}
+
+.scrl::-webkit-scrollbar {
+  display: block; /* Browser berbasis WebKit */
+}
+
+
+.contain {
+  @apply w-full h-[35rem] ;
+}
+
+.containOver {
+  @apply w-full h-full ;
+}
+
+
+.padding-x {
+  @apply sm:px-16 px-4;
+}
+
+.padding-y {
+  @apply sm:px-4 py-2;
+}
+
+.max-width {
+  @apply max-w-[1440px] mx-auto w-full;
+}
+
+.max-height {
+  @apply h-[650px]  ;
+}
+
+/* Mari Belajar */
+
+
+.flex-center {
+  @apply flex items-center justify-center;
+}
+
+.flex-between {
+  @apply flex justify-between items-center;
+}
+
+.card {
+  @apply w-[22rem] h-[22rem] mx-auto   shadow-2xl hover:shadow-sm ;
+}
+
+.component__card {
+  @apply w-full gap-5 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5
+}
+
+.card__materi {
+  @apply w-full  rounded-lg shadow-md;
+}
+
+
+.grid-center {
+  @apply w-full p-10 
+}
+
+/* ============================ Text Font responsive ====================================== */
+
+.text_responsive {
+  @apply text-[16px] sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-semibold  ;
+}
+
+.font-varela * {
+  font-family: inherit;
+}
+
+
+.custom-btn {
+  @apply flex flex-row relative justify-center items-center  outline-none text-[12px] sm:text-[16px];
+}
+
+.grid_item {
+  @apply grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 h-auto max-w-full p-5;
+}
+/* END: General styles */
+
+
+
+/* .car-details__main-image {
+  @apply relative w-full h-40 bg-pattern bg-cover bg-center rounded-lg;
+} */
+/* END: Car Details styles */
+
+/* START: Custom Filter styles */
+.custom-filter__btn {
+  @apply relative w-full min-w-[127px] flex justify-between items-center cursor-default rounded-lg bg-white py-2 px-3 text-left shadow-md sm:text-sm border;
+}
+
+.custom-filter__options {
+  @apply absolute mt-1 max-h-60 w-full overflow-auto rounded-md bg-white py-1 text-base shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none sm:text-sm;
+}
+/* END: Custom Filter styles */
+
+/* START: Footer styles */
+.footer {
+  @apply flex flex-col mt-5 border-t border-gray-100;
+}
+
+.footer__links-container {
+  @apply flex max-md:flex-col flex-wrap justify-between gap-5 sm:px-16 px-6 py-10;
+}
+
+.footer__rights {
+  @apply flex flex-col justify-start items-start gap-6;
+}
+
+.footer__links {
+  @apply flex-1 w-full flex md:justify-end flex-wrap max-md:mt-10 gap-20;
+}
+
+.footer__link {
+  @apply flex flex-col gap-6 text-base min-w-[170px];
+}
+
+.footer__copyrights {
+  @apply flex justify-between items-center flex-wrap mt-10 border-t border-gray-100 sm:px-16 px-6 py-10;
+}
+
+.footer__copyrights-link {
+  @apply flex-1 flex sm:justify-end justify-center max-sm:mt-4 gap-10;
+}
+/* END: Footer styles */

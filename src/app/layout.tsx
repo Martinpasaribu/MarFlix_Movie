@@ -1,14 +1,16 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
-import "./globals.css";
+import "../style/globals.css";
+import { Toaster } from "react-hot-toast";
+import ClientProvider from "./Provider/ClientProvider/page";
 
 const geistSans = localFont({
-  src: "./fonts/GeistVF.woff",
+  src: "../style/fonts/GeistVF.woff",
   variable: "--font-geist-sans",
   weight: "100 900",
 });
 const geistMono = localFont({
-  src: "./fonts/GeistMonoVF.woff",
+  src: "../style/fonts/GeistMonoVF.woff",
   variable: "--font-geist-mono",
   weight: "100 900",
 });
@@ -25,10 +27,18 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
+      <head>
+        <link rel="icon" href="/favicon.ico" />
+      <title>MarFlix</title>
+      </head>
+      <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
+      
+      <Toaster position="top-center" />
+
+      <ClientProvider>
         {children}
+      </ClientProvider>
+
       </body>
     </html>
   );
