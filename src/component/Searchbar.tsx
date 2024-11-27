@@ -88,7 +88,7 @@ const SearchBar  = ({ data, setMainView } : MovieListProps) => {
 
         <div className='flex flex-col gap-1 '>
 
-            <div className='flex justify-end items-center mt-10 gap-4 w-full'>
+            <div className='flex flex-wrap sm:flex-row justify-end items-center mt-10 gap-4 w-full'>
         
                 {/* Filter Genre */}
                 <select
